@@ -1,0 +1,123 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+#include<math.h>
+#define    str     string
+#define    sz      size()
+#define    bgn      begin()
+#define    ll      long long int
+#define    li      long int
+#define    con     continue
+#define    rt      return 0
+#define    fr      first
+#define    sec     second
+#define    pf      push_front
+#define    pb      push_back
+#define    vb      vct.begin()
+#define    ve      vct.end()
+#define    vs      vct.size()
+#define    ib      it.begin()
+#define    ie      it.end()
+#define    itf     it->first
+#define    its     it->second
+#define    lb      lst.begin()
+#define    le      lst.end()
+#define    mb      mp.begin()
+#define    me      mp.end()
+#define    stb     st.begin()
+#define    ste     st.end()
+#define    sb      s.begin()
+#define    se      s.end() 
+#define   forone    for(i=1;i<=n;i++)
+#define   forzero   for(i=0;i<n;i++)
+#define   sortone   sort(ara+1,ara+n+1)
+#define   sortzero  sort(ara,ara+n)
+#define   get(ara)  forone cin>>ara[i]
+#define tc ll tc;scanf("%lld",&tc);while(tc--)
+#define Yes cout<<"YES\n"
+#define No cout<<"NO\n"
+#define yes cout<<"Yes\n"
+#define no cout<<"No\n"
+#define nl "\n"
+#define Faster                        \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(0);                       \
+    cout.tie(0);
+#define all(v) v.begin(),v.end()
+#ifdef LOCAL
+#include "algo/debug.h"
+#else
+#define debug(...) 42
+#endif
+long long powll(long long base, long long exp)
+{
+    long long result = 1;
+
+    while(exp > 0)
+    {
+        if(exp & 1)
+            result *= base;
+
+        base *= base;
+        exp >>= 1;
+    }
+
+    return result;
+}//cout << powll(2, 10) << '\n';  // 1024
+vector<ll> si;
+void sieve(ll n)
+{
+    vector<bool> prime(n + 1, true);
+
+    prime[0] = prime[1] = false;
+
+    for(ll i = 2; i * i <= n; i++)//10010001100
+
+    {
+        if(prime[i])
+        {
+            for(ll j = i * i; j <= n; j += i)
+            {
+                prime[j] = false;
+            }
+        }
+    }
+
+    for(ll i = 2; i <= n; i++)
+    {
+        if(prime[i])
+        {
+            si.push_back(i);
+        }
+    }
+}
+ll gcd(ll a, ll b)
+{
+    while(b)
+    {
+        ll temp = a % b;
+        a = b;
+        b = temp;
+    }
+    return a;
+}
+ll lcm(ll a, ll b)
+{
+    return (a / gcd(a, b)) * b;
+}
+void solve()
+{
+   
+}
+int main()
+{
+   //sieve(100000);
+   ll t;
+   t=1;
+   cin>>t;
+   while(t--)
+   {
+       solve();
+   }
+   return 0;
+}
