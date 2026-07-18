@@ -48,4 +48,21 @@ This repository contains basic implementations of different DSA concepts for lea
 Compile:
 
 ```bash
-g++ filename.cpp -o outp
+g++ filename.cpp -o output
+
+📂 Repository Structure
+DSA-LAB
+│
+├── Linear_Search.cpp
+├── Binary_search.cpp
+├── Factorial.cpp
+├── Recursive_fibonacci.cpp
+├── Recursive_sum.cpp
+│
+├── Linked_list.c
+├── Stack_using_array.c
+├── Stack_using_LinkedList.c
+├── Queue_using_LinkedList.c
+├── Circular_queue.c
+│
+└── README.md
