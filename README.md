@@ -1,10 +1,15 @@
-# DSA Lab
+# DSA LAB
 
-This repository contains beginner-friendly implementations of common Data Structures and Algorithms concepts using C and C++.
+This repository contains Data Structures and Algorithms practice programs, homework solutions, and implementation examples in C and C++.
 
-## Topics Covered
-- Searching Algorithms
-- Recursion
+## Folders
+- Applications
+- Homework
 - Linked Lists
+- Recursion
+- Searching Algorithms
 - Stacks and Queues
-- Array and Expression-Based Applications
+- Trees and Heaps
+
+## Purpose
+The goal of this lab is to practice core DSA concepts through hands-on coding examples and problem-solving exercises.
